@@ -11,7 +11,7 @@ int main(void)
 
     do
     {
-        change = get_float("How much change is owed?");
+        change = get_float("how much change is owed?");
     }
     while (change < 0);
 
@@ -20,7 +20,7 @@ int main(void)
     while (quantity >= 25)
     {
         quantity -= 25;
-        coins ++;
+        coins++;
     }
 
     while (quantity >= 10)
