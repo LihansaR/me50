@@ -15,7 +15,7 @@ int main(int argc, string argv[])
 
         for (int i = 0; i < digits; i++)
         {
-            if (isdigit(argv[1][i]))
+            if (isdigit(argv[1][i]) == 0)
             {
                 isnum = false;
                 //printf("isnum %i false", i);
@@ -35,11 +35,11 @@ int main(int argc, string argv[])
             {
                 if (isalpha(plaintext[i]) != 0 && (int) plaintext[i] + rotateby <= upperbound(plaintext[i]))
                 {
-                    ciphertext[i] = (char) ((int) plaintext[i] + rotateby);
+                    ciphertext[i] = (char)((int) plaintext[i] + rotateby);
                 }
                 else if (isalpha(plaintext[i]) != 0 && (int) plaintext[i] + rotateby > upperbound(plaintext[i]))
                 {
-                    ciphertext[i] = (char) ((int) plaintext[i] + rotateby - 26);
+                    ciphertext[i] = (char)((int) plaintext[i] + rotateby - 26);
                 }
                 else
                 {
