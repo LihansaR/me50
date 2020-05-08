@@ -102,58 +102,58 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             if (i >= 0 && j - 1 >= 0)
             {
-                red += ogImage[i][j-1].rgbtRed;
-                green += ogImage[i][j-1].rgbtGreen;
-                blue += ogImage[i][j-1].rgbtBlue;
+                red += ogImage[i][j - 1].rgbtRed;
+                green += ogImage[i][j - 1].rgbtGreen;
+                blue += ogImage[i][j - 1].rgbtBlue;
                 counter++;
             }
             if ((i >= 0 && j + 1 >= 0) && (i >= 0 && j + 1 < width))
             {
-                red += ogImage[i][j+1].rgbtRed;
-                green += ogImage[i][j+1].rgbtGreen;
-                blue += ogImage[i][j+1].rgbtBlue;
+                red += ogImage[i][j + 1].rgbtRed;
+                green += ogImage[i][j + 1].rgbtGreen;
+                blue += ogImage[i][j + 1].rgbtBlue;
                 counter++;
             }
             if (i - 1 >= 0 && j >= 0)
             {
-                red += ogImage[i-1][j].rgbtRed;
-                green += ogImage[i-1][j].rgbtGreen;
-                blue += ogImage[i-1][j].rgbtBlue;
+                red += ogImage[i - 1][j].rgbtRed;
+                green += ogImage[i - 1][j].rgbtGreen;
+                blue += ogImage[i - 1][j].rgbtBlue;
                 counter++;
             }
             if (i - 1 >= 0 && j - 1 >= 0)
             {
-                red += ogImage[i-1][j-1].rgbtRed;
-                green += ogImage[i-1][j-1].rgbtGreen;
-                blue += ogImage[i-1][j-1].rgbtBlue;
+                red += ogImage[i - 1][j - 1].rgbtRed;
+                green += ogImage[i - 1][j - 1].rgbtGreen;
+                blue += ogImage[i - 1][j - 1].rgbtBlue;
                 counter++;
             }
             if ((i - 1 >= 0 && j + 1 >= 0) && (i - 1 >= 0 && j + 1 < width))
             {
-                red += ogImage[i-1][j+1].rgbtRed;
-                green += ogImage[i-1][j+1].rgbtGreen;
-                blue += ogImage[i-1][j+1].rgbtBlue;
+                red += ogImage[i - 1][j + 1].rgbtRed;
+                green += ogImage[i - 1][j + 1].rgbtGreen;
+                blue += ogImage[i - 1][j + 1].rgbtBlue;
                 counter++;
             }
             if ((i + 1 >= 0 && j >= 0) && (i + 1 < height && j >= 0))
             {
-                red += ogImage[i+1][j].rgbtRed;
-                green += ogImage[i+1][j].rgbtGreen;
-                blue += ogImage[i+1][j].rgbtBlue;
+                red += ogImage[i + 1][j].rgbtRed;
+                green += ogImage[i + 1][j].rgbtGreen;
+                blue += ogImage[i + 1][j].rgbtBlue;
                 counter++;
             }
             if ((i + 1 >= 0 && j - 1 >= 0) && (i + 1 < height && j - 1 >= 0))
             {
-                red += ogImage[i+1][j-1].rgbtRed;
-                green += ogImage[i+1][j-1].rgbtGreen;
-                blue += ogImage[i+1][j-1].rgbtBlue;
+                red += ogImage[i + 1][j - 1].rgbtRed;
+                green += ogImage[i + 1][j - 1].rgbtGreen;
+                blue += ogImage[i + 1][j - 1].rgbtBlue;
                 counter++;
             }
             if ((i + 1 >= 0 && j + 1 >= 0) && (i + 1 < height && j + 1 < width))
             {
-                red += ogImage[i+1][j+1].rgbtRed;
-                green += ogImage[i+1][j+1].rgbtGreen;
-                blue += ogImage[i+1][j+1].rgbtBlue;
+                red += ogImage[i + 1][j + 1].rgbtRed;
+                green += ogImage[i + 1][j + 1].rgbtGreen;
+                blue += ogImage[i + 1][j + 1].rgbtBlue;
                 counter++;
             }
 
