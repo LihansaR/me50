@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     unsigned char *bf = malloc(512);
     int counter = 0;
 
-    while (fread(bf, 512, 1 ,file))
+    while (fread(bf, 512, 1, file))
     {
         if (bf[0] == 0xff && bf[1] == 0xd8 && bf[2] == 0xff && (bf[3] & 0xf0) == 0xe0)
         {
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
         if (counter > 0)
         {
-            fwrite(bf, 512, 1 ,img);
+            fwrite(bf, 512, 1, img);
         }
     }
 
