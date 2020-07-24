@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="HTTP status codes and related information." />
+    <!-- OG Tags -->
+    <meta property="og:title" content="HTTP Status Codes Cheatsheet">
+    <meta property="og:description" content="HTTP status codes and related information." />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://status-code-cheatsheet.herokuapp.com/" />
+    <meta property="og:image" content="https://status-code-cheatsheet.herokuapp.com/static/images/103.jpg" />
+  </head>
+  <body>
+    {% include 'partials/header.html' %}
+    {% block content %}
+    {% endblock %}
+    {% include 'partials/footer.html' %}
+  </body>
+</html>
