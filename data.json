@@ -38,47 +38,47 @@
     }
   },
   "successful": {
-      "definition": "Successful status-codes are returned when the browser request was succesfully received, understood and processed by the server.",
-      "status": {
-          "200": {
-              "reason_phrase": "OK",
-              "definition": "The request has succeeded. Its response is cacheable. The meaning of this response depends on the HTTP request method the server received: For <code>GET</code> requests, the resource has been fetched and is transmitted in the message body; for <code>HEAD</code> requests, the entity headers are in the message body; for <code>POST</code> requests, the resource describing the result of the action is transmitted in the message body; for <code>TRACE</code> requests, the message body contains the request message as received by the server. For <code>PUT</code> and <code>DELETE</code> requests, a successful request is often not a <code>200</code>, but a <code>204 No Content</code>.",
-              "rfc": {
-                  "num": "7231",
-                  "url": "https://tools.ietf.org/html/rfc7231#section-6.3.1"
-              }
-          },
-          "201": {
-              "reason_phrase": "Created",
-              "definition": "The request has been fulfilled and resulted in a new resource being created. Successful creation occurred (via either <code>POST</code> or <code>PUT</code>). The new resource is returned in the body of the message, its location being either the URL of the request, or the content of the Location header.",
-              "rfc": {
-                  "num": "7231",
-                  "url": "https://tools.ietf.org/html/rfc7231#section-6.3.2"
-              }
-          },
-          "202": {
-              "reason_phrase": "Accepted",
-              "definition": "The request has been accepted for processing, but the processing has not been completed. It is non-committal, meaning that there is no way for the HTTP to later send an asynchronous response indicating the outcome of processing the request. It is intended for cases where another process or server handles the request, or for batch processing.",
-              "rfc": {
-                  "num": "7231",
-                  "url": "https://tools.ietf.org/html/rfc7231#section-6.3.3"
-              }
-          },
-          "203": {
-              "reason_phrase": "Non-Authoritative Information",
-              "definition": "The request was successful but is returning a modified version of the origin's response resulting in an enclosed payload that has been modified by a transforming proxy from that of the origin server's <code>200 OK</code> response. The <code>203 Non-Authoritative Information</code> response is similar to the value <code>214 Transformation Applied</code> of the <code>Warning</code> header code, which has the additional advantage of being applicable to responses with any status code.",
-              "rfc": {
-                  "num": "7231",
-                  "url": "https://tools.ietf.org/html/rfc7231#section-6.3.5"
-              }
-          },
-          "204": {
-              "reason_phrase": "No Content",
-              "definition": "The request has succeeded, but the client doesn't need to go away from its current page. This response is cacheable by default and includes an <code>ETag</code> header. The common use case is to return <code>204 No Content</code> as a result of a <code>PUT</code> request, updating a resource, without changing the current content of the page displayed to the user. If the resource is created, <code>201 Created</code> is returned instead. If the page should be changed to the newly updated page, the <code>200 OK</code> should be used instead.",
+    "definition": "Successful status-codes are returned when the browser request was succesfully received, understood and processed by the server.",
+    "status": {
+      "200": {
+        "reason_phrase": "OK",
+        "definition": "The request has succeeded. Its response is cacheable. The meaning of this response depends on the HTTP request method the server received: For <code>GET</code> requests, the resource has been fetched and is transmitted in the message body; for <code>HEAD</code> requests, the entity headers are in the message body; for <code>POST</code> requests, the resource describing the result of the action is transmitted in the message body; for <code>TRACE</code> requests, the message body contains the request message as received by the server. For <code>PUT</code> and <code>DELETE</code> requests, a successful request is often not a <code>200</code>, but a <code>204 No Content</code>.",
+        "rfc": {
+          "num": "7231",
+          "url": "https://tools.ietf.org/html/rfc7231#section-6.3.1"
+        }
+      },
+      "201": {
+        "reason_phrase": "Created",
+        "definition": "The request has been fulfilled and resulted in a new resource being created. Successful creation occurred (via either <code>POST</code> or <code>PUT</code>). The new resource is returned in the body of the message, its location being either the URL of the request, or the content of the Location header.",
+        "rfc": {
+          "num": "7231",
+          "url": "https://tools.ietf.org/html/rfc7231#section-6.3.2"
+        }
+      },
+      "202": {
+        "reason_phrase": "Accepted",
+        "definition": "The request has been accepted for processing, but the processing has not been completed. It is non-committal, meaning that there is no way for the HTTP to later send an asynchronous response indicating the outcome of processing the request. It is intended for cases where another process or server handles the request, or for batch processing.",
+        "rfc": {
+          "num": "7231",
+          "url": "https://tools.ietf.org/html/rfc7231#section-6.3.3"
+        }
+      },
+      "203": {
+        "reason_phrase": "Non-Authoritative Information",
+        "definition": "The request was successful but is returning a modified version of the origin's response resulting in an enclosed payload that has been modified by a transforming proxy from that of the origin server's <code>200 OK</code> response. The <code>203 Non-Authoritative Information</code> response is similar to the value <code>214 Transformation Applied</code> of the <code>Warning</code> header code, which has the additional advantage of being applicable to responses with any status code.",
         "rfc": {
           "num": "7231",
           "url": "https://tools.ietf.org/html/rfc7231#section-6.3.5"
-          }
+        }
+      },
+      "204": {
+        "reason_phrase": "No Content",
+        "definition": "The request has succeeded, but the client doesn't need to go away from its current page. This response is cacheable by default and includes an <code>ETag</code> header. The common use case is to return <code>204 No Content</code> as a result of a <code>PUT</code> request, updating a resource, without changing the current content of the page displayed to the user. If the resource is created, <code>201 Created</code> is returned instead. If the page should be changed to the newly updated page, the <code>200 OK</code> should be used instead.",
+        "rfc": {
+          "num": "7231",
+          "url": "https://tools.ietf.org/html/rfc7231#section-6.3.5"
+        }
       },
       "205": {
         "reason_phrase": "Reset Content",
@@ -206,7 +206,7 @@
     "status": {
       "400": {
         "reason_phrase": "Bad Request",
-        "definition": "The request cannot be understood by the server due to invalid syntax",
+        "definition": "The request cannot be understood by the server due to invalid syntax.",
         "rfc": {
           "num": "7231",
           "url": "https://tools.ietf.org/html/rfc7231#section-6.5.1"
